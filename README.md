@@ -8,7 +8,7 @@ A modular Natural Language to SQL system using an encoder-only Transformer with 
 
 This repository contains a curriculum-trained NL-to-SQL model that translates natural language questions into SQL over a user-defined schema. It supports single-table queries, filters (`WHERE`), aggregations (`COUNT`, `SUM`, `AVG`, etc.), `GROUP BY`, `HAVING`, and multi-table JOINs (INNER, LEFT, RIGHT). Training is phase-wise: each phase adds a new capability (e.g. Phase 1 = SELECT, Phase 2 = + WHERE, Phase 4.5 = JOINs). Use the notebooks to train from scratch or run inference with your own schema and questions.
 
-**To show a short description on the repo homepage:** On GitHub, open your repo → click the gear icon next to "About" (right sidebar) → set **Description** to e.g. *Modular NL-to-SQL with phase-wise Transformer training: SELECT, WHERE, GROUP BY, HAVING, JOIN (INNER/LEFT/RIGHT).* → add **Topics** (e.g. `nl2sql`, `transformer`, `text-to-sql`, `pytorch`) → Save.
+
 
 ---
 
