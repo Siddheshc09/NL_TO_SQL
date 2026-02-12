@@ -1,0 +1,5591 @@
+[
+  {
+    "nl_query": "show id from employees where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where salary > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where salary < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where salary >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where salary <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from employees where salary = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where salary > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where salary < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where salary >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where salary <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show salary from employees where salary = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where salary > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where salary < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where salary >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where salary <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from employees where salary = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where salary > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where salary < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where salary >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where salary <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show department from employees where salary = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where salary > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where salary < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where salary >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where salary <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show location from employees where salary = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.salary"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "get id from employees where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get id from employees where department = IT",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.department"
+      ],
+      "<VALUE>": "IT"
+    }
+  },
+  {
+    "nl_query": "get id from employees where location = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.id",
+        "employees.location"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get salary from employees where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get salary from employees where department = IT",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.department"
+      ],
+      "<VALUE>": "IT"
+    }
+  },
+  {
+    "nl_query": "get salary from employees where location = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.salary",
+        "employees.location"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get name from employees where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get name from employees where department = IT",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.department"
+      ],
+      "<VALUE>": "IT"
+    }
+  },
+  {
+    "nl_query": "get name from employees where location = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.name",
+        "employees.location"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get department from employees where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get department from employees where department = IT",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.department"
+      ],
+      "<VALUE>": "IT"
+    }
+  },
+  {
+    "nl_query": "get department from employees where location = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.department",
+        "employees.location"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get location from employees where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get location from employees where department = IT",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.department"
+      ],
+      "<VALUE>": "IT"
+    }
+  },
+  {
+    "nl_query": "get location from employees where location = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": [
+        "employees.location",
+        "employees.location"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "show id from orders where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where amount > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where amount < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where amount >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where amount <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where amount = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where customer_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where customer_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where customer_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where customer_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from orders where customer_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where amount > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where amount < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where amount >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where amount <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where amount = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where customer_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where customer_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where customer_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where customer_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show amount from orders where customer_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.amount",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where amount > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where amount < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where amount >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where amount <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where amount = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.amount"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where customer_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where customer_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where customer_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where customer_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders where customer_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": [
+        "orders.customer_id",
+        "orders.customer_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where year > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where year < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where year >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where year <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where year = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where cgpa > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where cgpa < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where cgpa >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where cgpa <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from students where cgpa = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where year > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where year < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where year >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where year <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where year = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where cgpa > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where cgpa < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where cgpa >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where cgpa <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show year from students where cgpa = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where year > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where year < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where year >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where year <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where year = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where cgpa > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where cgpa < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where cgpa >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where cgpa <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show cgpa from students where cgpa = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where year > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where year < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where year >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where year <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where year = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where cgpa > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where cgpa < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where cgpa >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where cgpa <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from students where cgpa = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where year > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where year < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where year >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where year <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where year = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.year"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where cgpa > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where cgpa < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where cgpa >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where cgpa <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show branch from students where cgpa = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.cgpa"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "get id from students where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get id from students where branch = CS",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.id",
+        "students.branch"
+      ],
+      "<VALUE>": "CS"
+    }
+  },
+  {
+    "nl_query": "get year from students where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get year from students where branch = CS",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.year",
+        "students.branch"
+      ],
+      "<VALUE>": "CS"
+    }
+  },
+  {
+    "nl_query": "get cgpa from students where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get cgpa from students where branch = CS",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.cgpa",
+        "students.branch"
+      ],
+      "<VALUE>": "CS"
+    }
+  },
+  {
+    "nl_query": "get name from students where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get name from students where branch = CS",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.name",
+        "students.branch"
+      ],
+      "<VALUE>": "CS"
+    }
+  },
+  {
+    "nl_query": "get branch from students where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get branch from students where branch = CS",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": [
+        "students.branch",
+        "students.branch"
+      ],
+      "<VALUE>": "CS"
+    }
+  },
+  {
+    "nl_query": "show id from customers where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where order_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where order_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where order_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where order_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show id from customers where order_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where order_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where order_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where order_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where order_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show order_id from customers where order_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where order_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where order_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where order_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where order_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show name from customers where order_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where order_id > 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where order_id < 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where order_id >= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      ">=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where order_id <= 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "<=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "show city from customers where order_id = 10",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.order_id"
+      ],
+      "<VALUE>": 10
+    }
+  },
+  {
+    "nl_query": "get id from customers where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get id from customers where city = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.id",
+        "customers.city"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get order_id from customers where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get order_id from customers where city = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.order_id",
+        "customers.city"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get name from customers where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get name from customers where city = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.name",
+        "customers.city"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  },
+  {
+    "nl_query": "get city from customers where name = Alice",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.name"
+      ],
+      "<VALUE>": "Alice"
+    }
+  },
+  {
+    "nl_query": "get city from customers where city = Mumbai",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "WHERE",
+      "<COLUMN>",
+      "=",
+      "<VALUE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "customers",
+      "<COLUMN>": [
+        "customers.city",
+        "customers.city"
+      ],
+      "<VALUE>": "Mumbai"
+    }
+  }
+]

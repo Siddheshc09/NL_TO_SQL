@@ -1,0 +1,842 @@
+[
+  {
+    "nl_query": "show id from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.id"
+    }
+  },
+  {
+    "nl_query": "get id from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.id"
+    }
+  },
+  {
+    "nl_query": "list id from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.id"
+    }
+  },
+  {
+    "nl_query": "display id from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.id"
+    }
+  },
+  {
+    "nl_query": "show name from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.name"
+    }
+  },
+  {
+    "nl_query": "get name from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.name"
+    }
+  },
+  {
+    "nl_query": "list name from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.name"
+    }
+  },
+  {
+    "nl_query": "display name from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.name"
+    }
+  },
+  {
+    "nl_query": "show salary from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.salary"
+    }
+  },
+  {
+    "nl_query": "get salary from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.salary"
+    }
+  },
+  {
+    "nl_query": "list salary from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.salary"
+    }
+  },
+  {
+    "nl_query": "display salary from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.salary"
+    }
+  },
+  {
+    "nl_query": "show department from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.department"
+    }
+  },
+  {
+    "nl_query": "get department from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.department"
+    }
+  },
+  {
+    "nl_query": "list department from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.department"
+    }
+  },
+  {
+    "nl_query": "display department from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.department"
+    }
+  },
+  {
+    "nl_query": "show location from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.location"
+    }
+  },
+  {
+    "nl_query": "get location from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.location"
+    }
+  },
+  {
+    "nl_query": "list location from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.location"
+    }
+  },
+  {
+    "nl_query": "display location from employees",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "employees",
+      "<COLUMN>": "employees.location"
+    }
+  },
+  {
+    "nl_query": "show id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.id"
+    }
+  },
+  {
+    "nl_query": "get id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.id"
+    }
+  },
+  {
+    "nl_query": "list id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.id"
+    }
+  },
+  {
+    "nl_query": "display id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.id"
+    }
+  },
+  {
+    "nl_query": "show amount from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.amount"
+    }
+  },
+  {
+    "nl_query": "get amount from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.amount"
+    }
+  },
+  {
+    "nl_query": "list amount from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.amount"
+    }
+  },
+  {
+    "nl_query": "display amount from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.amount"
+    }
+  },
+  {
+    "nl_query": "show date from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.date"
+    }
+  },
+  {
+    "nl_query": "get date from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.date"
+    }
+  },
+  {
+    "nl_query": "list date from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.date"
+    }
+  },
+  {
+    "nl_query": "display date from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.date"
+    }
+  },
+  {
+    "nl_query": "show customer_id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.customer_id"
+    }
+  },
+  {
+    "nl_query": "get customer_id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.customer_id"
+    }
+  },
+  {
+    "nl_query": "list customer_id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.customer_id"
+    }
+  },
+  {
+    "nl_query": "display customer_id from orders",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "orders",
+      "<COLUMN>": "orders.customer_id"
+    }
+  },
+  {
+    "nl_query": "show id from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.id"
+    }
+  },
+  {
+    "nl_query": "get id from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.id"
+    }
+  },
+  {
+    "nl_query": "list id from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.id"
+    }
+  },
+  {
+    "nl_query": "display id from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.id"
+    }
+  },
+  {
+    "nl_query": "show name from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.name"
+    }
+  },
+  {
+    "nl_query": "get name from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.name"
+    }
+  },
+  {
+    "nl_query": "list name from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.name"
+    }
+  },
+  {
+    "nl_query": "display name from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.name"
+    }
+  },
+  {
+    "nl_query": "show year from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.year"
+    }
+  },
+  {
+    "nl_query": "get year from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.year"
+    }
+  },
+  {
+    "nl_query": "list year from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.year"
+    }
+  },
+  {
+    "nl_query": "display year from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.year"
+    }
+  },
+  {
+    "nl_query": "show cgpa from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.cgpa"
+    }
+  },
+  {
+    "nl_query": "get cgpa from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.cgpa"
+    }
+  },
+  {
+    "nl_query": "list cgpa from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.cgpa"
+    }
+  },
+  {
+    "nl_query": "display cgpa from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.cgpa"
+    }
+  },
+  {
+    "nl_query": "show branch from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.branch"
+    }
+  },
+  {
+    "nl_query": "get branch from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.branch"
+    }
+  },
+  {
+    "nl_query": "list branch from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.branch"
+    }
+  },
+  {
+    "nl_query": "display branch from students",
+    "input_tokens": [
+      "<START>",
+      "SELECT",
+      "<COLUMN>",
+      "FROM",
+      "<TABLE>",
+      "<END>"
+    ],
+    "schema_bindings": {
+      "<TABLE>": "students",
+      "<COLUMN>": "students.branch"
+    }
+  }
+]
