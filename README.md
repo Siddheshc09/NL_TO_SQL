@@ -31,6 +31,17 @@ Grammar and schema constraints are enforced during decoding via `get_allowed_tok
 
 ```
 nl_To_sql_4LA_CGT/
+├── app/                              # Web application (FastAPI)
+│   ├── main.py                       # FastAPI app, static/template mounting
+│   ├── routes.py                     # API routes (e.g. /generate)
+│   ├── inference_service.py          # NL → SQL inference
+│   ├── model_loader.py               # Load transformer checkpoints
+│   └── schemas.py                    # Request/response schemas
+├── templates/                        # HTML templates
+│   └── index.html                    # Web UI for NL-to-SQL
+├── static/                           # Frontend assets
+│   ├── style.css
+│   └── app.js
 ├── data/
 │   ├── create_sql_ast_phases.ipynb   # Builds phase-wise AST datasets
 │   └── sql_ast/
@@ -45,7 +56,7 @@ nl_To_sql_4LA_CGT/
 │   ├── 01_phase1_select.ipynb        # Phase 1: SELECT col FROM table
 │   ├── 02_phase2_select_where.ipynb  # Phase 2: + WHERE
 │   ├── 03_phase3_agg_groupby_having.ipynb  # Phase 3: Aggregations, GROUP BY, HAVING
-│   ├── 04_phase4_join.ipynb          # Phase 4: JOIN / INNER JOIN
+│   ├── 04_phase4_join.ipynb         # Phase 4: JOIN / INNER JOIN
 │   ├── 04.5_phase4.5_join.ipynb     # Phase 4.5: LEFT JOIN, RIGHT JOIN
 │   ├── phase1_test.ipynb … phase4.5_test.ipynb  # Inference notebooks per phase
 │   └── checkpoints/                  # Saved .pt weights (gitignored)
@@ -53,7 +64,7 @@ nl_To_sql_4LA_CGT/
 │   ├── __init__.py
 │   ├── schema_parser.py              # Parse schema JSON
 │   ├── nl_parser.py                  # NL tokenization / intent
-│   ├── semantic_aligner.py            # NL ↔ schema alignment
+│   ├── semantic_aligner.py           # NL ↔ schema alignment
 │   ├── schema_binder.py              # Bind <TABLE>/<COLUMN> to schema
 │   ├── ast_adapter.py                # Token sequence → AST
 │   ├── ast_renderer.py               # AST → SQL string
@@ -63,6 +74,8 @@ nl_To_sql_4LA_CGT/
 │   ├── utils.py                      # Training helpers, masking
 │   ├── vocab.py                      # Token vocab, SQL keywords, placeholders
 │   └── ...
+├── requirements.txt                  # Python dependencies
+├── .env                              # Optional: env vars (gitignored)
 ├── .gitignore
 └── README.md
 ```
@@ -125,9 +138,8 @@ WHERE departments.dept_name = 'ai'
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/<owner>/NL_TO_SQL.git
+   git clone https://github.com/Siddheshc09/NL_TO_SQL.git
    cd NL_TO_SQL
-   # Replace <owner> with the repository owner if cloning a fork.
    ```
 
 2. **Python environment** (Python 3.8+ recommended)
@@ -139,14 +151,32 @@ WHERE departments.dept_name = 'ai'
 
 3. **Install dependencies**
    ```bash
-   pip install torch
-   pip install sentence-transformers   # for semantic_aligner
-   pip install tqdm
+   pip install -r requirements.txt
+   ```
+   This installs FastAPI, Uvicorn, Jinja2, PyTorch, sentence-transformers, tqdm, and other required packages.
+
+4. **Optional:** Add a `.env` file in the project root for API keys or custom paths. Do not commit `.env` (it is in `.gitignore`).
+
+---
+
+## Run the project locally
+
+The project includes a **web app** (FastAPI) so you can run NL-to-SQL from the browser.
+
+1. **From the project root** (the folder that contains `app/`, `templates/`, `static/`, and `requirements.txt`):
+   ```bash
+   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
 
-   If you use a `requirements.txt`, add at least: `torch`, `sentence-transformers`, `tqdm`.
+2. **Open in browser**
+   - Web UI: [http://localhost:8000](http://localhost:8000)
+   - API docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-4. **Optional:** Add a `.env` in the project root for any API keys or paths (e.g. for future extensions). Do not commit `.env` (it is in `.gitignore`).
+3. **Using the API**
+   - **POST** `/generate` with JSON body: `{"db_schema": <your_schema>, "question": "<natural language question>"}`  
+   - Response includes `generated_sql` or an `error` message.
+
+**Note:** The app loads the Phase 4.5 checkpoint by default (`notebooks/checkpoints/phase4_5_best.pt`). Train the model using the notebooks first, or change `MODEL_PATH` in `app/model_loader.py` to use another checkpoint.
 
 ---
 
