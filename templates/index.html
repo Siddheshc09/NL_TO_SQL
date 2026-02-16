@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4LA-CGT NL → SQL</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>NL → SQL Transformer</h1>
+
+    <label>Schema (JSON)</label>
+    <textarea id="schema">
+{
+  "tables": {
+    "employees": ["id", "first_name", "salary", "dept_id"],
+    "departments": ["dept_id", "dept_name"]
+  }
+}
+    </textarea>
+
+    <label>Natural Language Question</label>
+    <input type="text" id="question"
+           placeholder="Enter your question here...">
+
+    <button onclick="generateSQL()">Generate SQL</button>
+
+    <div id="loading" class="hidden">Generating...</div>
+
+    <label>Generated SQL</label>
+    <pre id="result"></pre>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
